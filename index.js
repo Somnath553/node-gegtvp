@@ -20,13 +20,13 @@ app.post('/bfhl', urlencodedParser,(req,res)=>{
 
   for(let i in arr)
   {
-    if(isinfinite(arr[i]))
+    if(isFinite(arr[i]))
     {
        if(arr[i]%2==0)
        {
          evennum.push(arr[i])
        }
-       ele{
+       else{
          oddnum.push(arr[i])
        }
     }
@@ -36,7 +36,7 @@ app.post('/bfhl', urlencodedParser,(req,res)=>{
     }
   }
 
-  cont responce={
+  const responce={
     is_success: true,
 user_id: "john_doe_17091999",
  email : 'john@xyz.com',
